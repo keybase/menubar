@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "example menubar electron app",
   "dependencies": {
+    "electron-positioner": "git+https://github.com/keybase/electron-positioner.git",
     "menubar": "*"
   },
   "devDependencies": {
