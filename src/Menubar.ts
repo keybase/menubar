@@ -221,7 +221,7 @@ export class Menubar extends EventEmitter {
     if (!this.tray) {
       throw new Error('Tray has been initialized above');
     }
-    if (process.platform != "win32" && process.platform != "darwin") {
+    if (process.platform !== "win32" && process.platform !== "darwin") {
       this.tray.setContextMenu(null);
     }
     this.tray.on(defaultClickEvent as any, this.clicked.bind(this));
